@@ -57,7 +57,7 @@ namespace TestingProject.Tests.Controllers
             HomeController controller = new HomeController();
 
             // Act
-            ViewResult result = controller.CheckTestCase(1) as ViewResult;
+            ViewResult result = controller.CheckTestCase(10) as ViewResult;
 
             // Assert
             Assert.IsNotNull(result);
