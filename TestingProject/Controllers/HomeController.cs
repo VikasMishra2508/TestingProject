@@ -26,5 +26,12 @@ namespace TestingProject.Controllers
 
             return View();
         }
+
+        public ActionResult CheckTestCase(int id)
+        {
+            if (id < 10) throw new Exception("This Is an Error");
+            ViewBag.Message = "This is a new Function";
+            return View();
+        }
     }
 }

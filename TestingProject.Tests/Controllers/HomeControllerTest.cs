@@ -50,5 +50,17 @@ namespace TestingProject.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
         }
+
+        [TestMethod]
+        public void CheckTestCase()
+        {
+            HomeController controller = new HomeController();
+
+            // Act
+            ViewResult result = controller.CheckTestCase(1) as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
     }
 }
