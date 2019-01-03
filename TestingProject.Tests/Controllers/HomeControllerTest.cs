@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TestingProject;
 using TestingProject.Controllers;
+using TestingProject.Models;
 
 namespace TestingProject.Tests.Controllers
 {
@@ -62,5 +63,6 @@ namespace TestingProject.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
         }
+        
     }
 }
